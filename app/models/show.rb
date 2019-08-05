@@ -6,7 +6,6 @@ class Show < ActiveRecord::Base
   
   def Show::most_popular_show
     Show.order(rating: :desc).first
-    binding.pry
   end 
   
   def Show::lowest_rating
